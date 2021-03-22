@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='/style.css' rel="style/text">
+    <link href="../rockpaperscissors/style.css" rel="stylesheet">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -19,15 +19,17 @@
     </div>
 
     <div class="choices">
-        <div class="choice">
+        <div class="choice" id="r">
             <img src="../rockpaperscissors/resources/img/rock.png" alt="rock">
         </div>
-        <div class="choice">
-            <img src="/rockpaperscissors/resources/img/paper.png" alt="paper">
+        <div class="choice" id="p">
+            <img src="../rockpaperscissors/resources/img/paper.png" alt="paper">
         </div>
-        <div class="choice">
+        <div class="choice" id="s">
             <img src="../rockpaperscissors/resources/img/scissor.png" alt="scissor">
         </div>
     </div>
+
+    <p id="action-message">Make your move</p>
 </body>
 </html>
