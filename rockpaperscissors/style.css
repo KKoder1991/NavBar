@@ -87,5 +87,12 @@ img {
 .choice:hover{
     cursor: pointer;
     background: white;
+}
 
+#action-message {
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
