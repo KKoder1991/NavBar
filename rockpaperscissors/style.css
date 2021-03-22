@@ -30,6 +30,7 @@ img {
     margin: 20px auto;
     border: 3px solid white;
     width: 200px;
+    text-align: center;
     color: white;
     font-size: 46px;
     border-radius: 4px;
@@ -48,6 +49,12 @@ img {
 
 #user-label{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 30px;
+    right: -25px;
 }
