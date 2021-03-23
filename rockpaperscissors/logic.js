@@ -21,7 +21,7 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-function convertToWord(){
+function convertToWord(letter){
     if (letter === "r") return "Rock";
     if (letter === "p") return "Paper";
     return "Scissors";
@@ -31,17 +31,17 @@ function win(userChoice, computerChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = userChoice + " beats " + computerChoice + ", you win.";
+    result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)} you win.`;
 }
 
 function lose(userChoice, computerChoice){
     computerScore++;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = computerChoice + " beats " + userChoice + ", you lose.";
+    result_p.innerHTML = `${convertToWord(computerChoice)} beats ${convertToWord(userChoice)} you lose.`;;
 }
 
 function draw(userChoice, computerChoice){
-    result_p.innerHTML = userChoice + " is equal to " + computerChoice + " it is a draw.";
+    result_p.innerHTML = `${convertToWord(userChoice)}  is equal to  ${convertToWord(computerChoice)},  it is a draw.`;
 }
 
 function game(userChoice){
