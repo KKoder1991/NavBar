@@ -24,8 +24,6 @@ function computerChoice() {
 console.log(computerChoice());
 
 
-
-
 function main(){
     rock_div.addEventListener('click', function(){
         game("r");
