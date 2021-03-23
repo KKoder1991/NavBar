@@ -27,23 +27,31 @@ function win(){
     computerScore_span.innerHTML = computerScore;
 }
 
+function lose(){
+ console.log("Lose")
+}
+
+function draw(){
+    console.log("DRAWWW")
+}
+
 function game(userChoice){
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
         case "rs":
         case "pr":
         case "sp":
-            win()
+            win();
             break;
         case "sr":
         case "rp":
         case "ps":
-            lose()
+            lose();
             break;
         case "rr":
         case "pp":
         case "ss":
-            draw()
+            draw();
             break;
     }
     
