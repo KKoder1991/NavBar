@@ -15,14 +15,17 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 
-function computerChoice() {
+function getComputerChoice() {
     const choices = ["r", "p", "s"];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
-console.log(computerChoice());
-
+function game(userChoice){
+    const computerChoice = getComputerChoice();
+    console.log("user choice " + userChoice());
+    console.log("computer choice " + computerChoice());
+}
 
 function main(){
     rock_div.addEventListener('click', function(){
