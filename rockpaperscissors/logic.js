@@ -21,7 +21,7 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
-function win(){
+function win(userChoice, computerChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
@@ -30,6 +30,9 @@ function win(){
 }
 
 function lose(){
+    computerScore++;
+    computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = computerChoice + " beats " + userChoice + ", you lose.";
  console.log("Lose");
 }
 
