@@ -21,8 +21,31 @@ function getComputerChoice() {
     return choices[randomNumber];
 }
 
+function win(){
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+}
+
 function game(userChoice){
     const computerChoice = getComputerChoice();
+    switch (userChoice + computerChoice) {
+        case "rs":
+        case "pr":
+        case "sp":
+            win()
+            break;
+        case "sr":
+        case "rp":
+        case "ps":
+            lose()
+            break;
+        case "rr":
+        case "pp":
+        case "ss":
+            draw()
+            break;
+    }
     
 }
 
