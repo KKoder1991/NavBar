@@ -29,7 +29,7 @@ function win(userChoice, computerChoice){
     console.log("win");
 }
 
-function lose(){
+function lose(userChoice, computerChoice){
     computerScore++;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = computerChoice + " beats " + userChoice + ", you lose.";
