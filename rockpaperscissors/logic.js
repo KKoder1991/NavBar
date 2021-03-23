@@ -10,7 +10,7 @@ const computerScore_span = document.getElementById("computer-score");
 /*Used to cache the DOM and make it easier to write the code in the program.
 We are storing something for future use. Storing things in variables to use later.*/
 const scoreBoard_div = document.querySelector(".score-board");
-const result_div = document.querySelector(".result");
+const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
@@ -25,14 +25,16 @@ function win(){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
+    result_p.innerHTML = userChoice + " beats " + computerChoice + ", you win.";
+    console.log("win");
 }
 
 function lose(){
- console.log("Lose")
+ console.log("Lose");
 }
 
 function draw(){
-    console.log("DRAWWW")
+    console.log("DRAWWW");
 }
 
 function game(userChoice){
@@ -41,17 +43,17 @@ function game(userChoice){
         case "rs":
         case "pr":
         case "sp":
-            win();
+            win(userChoice, computerChoice);
             break;
         case "sr":
         case "rp":
         case "ps":
-            lose();
+            lose(userChoice, computerChoice);
             break;
         case "rr":
         case "pp":
         case "ss":
-            draw();
+            draw(userChoice, computerChoice);
             break;
     }
     
