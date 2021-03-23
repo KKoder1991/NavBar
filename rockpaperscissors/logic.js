@@ -26,18 +26,16 @@ function win(userChoice, computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = userChoice + " beats " + computerChoice + ", you win.";
-    console.log("win");
 }
 
 function lose(userChoice, computerChoice){
     computerScore++;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = computerChoice + " beats " + userChoice + ", you lose.";
- console.log("Lose");
 }
 
-function draw(){
-    console.log("DRAWWW");
+function draw(userChoice, computerChoice){
+    result_p.innerHTML = userChoice + " is equal to " + computerChoice + " it is a draw.";
 }
 
 function game(userChoice){
