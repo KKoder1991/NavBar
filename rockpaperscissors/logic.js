@@ -1,7 +1,7 @@
 
 /* These will be used to keep track of the score for the game later in the program. */
-const userScore = 0;
-const computerScore = 0;
+let userScore = 0;
+let computerScore = 0;
 
 /*These are variables for DOM variables to use for the DOM elements */
 const userScore_span = document.getElementById("user-score");
@@ -23,8 +23,7 @@ function getComputerChoice() {
 
 function game(userChoice){
     const computerChoice = getComputerChoice();
-    console.log("user choice " + userChoice());
-    console.log("computer choice " + computerChoice());
+    
 }
 
 function main(){
