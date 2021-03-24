@@ -15,6 +15,9 @@ const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissor_div = document.getElementById("s");
 
+
+/* I created two new variables and then assigned the randomNumber variable function to the const choices. This allows 
+for a random choice of the three letters to be chosen. */
 function getComputerChoice() {
     const choices = ["r", "p", "s"];
     const randomNumber = Math.floor(Math.random() * 3);
@@ -76,7 +79,7 @@ function main(){
     rock_div.addEventListener('click', () => game("r"));
 
     paper_div.addEventListener('click', () => game("p"));
-    
+
     scissor_div.addEventListener('click', () => game("s"));
 }
 
