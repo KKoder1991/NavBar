@@ -13,6 +13,9 @@ function getComputerChoice() {
         return choices[randomChoice];
 }
 
+/*The game function looks at the 9 different outcomes the game could have.  the switch case
+starts by combining the user and computer choices. After the choices are made, it is combined to see
+what outcome there is. After each set of win, lose or draw outcomes a message is printed to the console.*/
 function game() {
     const computerChoice = getComputerChoice();
     switch(userChoice + computerChoice) {
